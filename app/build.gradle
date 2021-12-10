@@ -1,0 +1,57 @@
+plugins {
+    id 'com.android.application'
+    id 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+}
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        applicationId "com.abhinav.tecstudyapquiz"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 10
+        versionName "1.9"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.firebase:firebase-database:19.4.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.9.7'
+    implementation 'com.google.android.gms:play-services-ads:20.3.0'
+    implementation 'com.google.firebase:firebase-auth:19.3.1'
+    implementation 'com.google.firebase:firebase-storage:19.2.0'
+    implementation 'com.hbb20:ccp:2.3.2'
+    implementation 'com.tuyenmonkey:mkloader:1.4.0'
+    implementation 'com.airbnb.android:lottie:3.0.7'
+
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+    implementation files('libs\\mail.jar')
+    implementation files('libs\\activation.jar')
+    implementation files('libs\\additionnal.jar')
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    testImplementation 'junit:junit:4.12'
+
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+}
+apply plugin: 'com.google.gms.google-services'

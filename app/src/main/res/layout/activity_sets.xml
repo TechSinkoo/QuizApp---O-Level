@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgmain"
+    tools:context=".SetsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/login_background">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <TextView
+        android:id="@+id/textviewd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sets"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/robotobold"
+        android:textColor="@android:color/white"
+        android:padding="16dp"/>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnWidth="120dp"
+
+        android:verticalSpacing="16dp"
+        android:numColumns="auto_fit"
+        android:gravity="center"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>

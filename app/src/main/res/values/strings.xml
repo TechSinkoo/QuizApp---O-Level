@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Quiz App - O Level</string>
+    <string name="sets">Sets</string>
+    <string name="banner_id">ca-app-pub-2779631885874157/9957941809</string>
+    <string name="interstitialAd_id">ca-app-pub-2779631885874157/2509846564</string>
+
+<!--    <string name="banner_id">ca-app-pub-3940256099942544/6300978111</string>-->
+<!--    <string name="interstitialAd_id">ca-app-pub-3940256099942544/8691691433</string>-->
+
+
+</resources>
